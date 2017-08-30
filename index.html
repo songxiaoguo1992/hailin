@@ -1,0 +1,960 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>海林县防洪抗旱指挥平台</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/cssb.css">
+<link href="css/stylec.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<!--header头部-->
+<div id="header">
+  <div class="header_bj">
+    <div class="row">
+      <div class="col-sm-7 col-md-10"> <img src="images/b_01.png" alt=""> </div>
+      <div class="col-sm-2 col-md-2 header_right">
+        <div class="header_user">
+          <div class="adbook"> <a class="txl" data-toggle="modal" data-target="#txl">通讯录</a> <a class="xxfb" data-toggle="modal" data-target="#xxfb">信息发布</a> </div>
+          <img src="images/admin.png"alt="">管理员 </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--中间区域（轮播图）-->
+<div class="wrap">
+  <ul class="lunbo">
+   <li  id="main_content" class="current">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="xq" id="sy">
+              <h3><span>预警信息</span></h3>
+              <div class="common ss">
+                <h6> >>山洪信息</h6>
+                <div class="sh">长汀镇， 12月20日9时1分达到准备转移级别预警，正在处理目前是已内部告警状态。其中，西沟屯3小时累计降雨45.3mm，超准备转移0.3mm</div>
+                <div class="sh">横道镇， 12月20日9时1分达到立即转移级别预警，未处理目前是新产生状态。其中，柳树村3小时累计降雨62.2mm，超准备转移17.2mm。</div>
+                <h6>>>雨情信息</h6>
+                <div class="sh">2015-12-19 08:00 至 当前时间：</div>
+                <div class="sh">有28个降水站报数据，海林县平均降雨7.1mm,最大降雨64.7mm。</div>
+                <h6>>>水情信息</h6>
+                <div class="sh">2015-12-19 08:00 至 当前时间：</div>
+                <div class="sh">有7个河道站报数据，其中0个站点的最新水位超警戒。</div>
+                <div class="sh">有3个水库站报数据，其中2个站点的最新水位超汛限。</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="lb">
+              <div class="xq">
+                <h3>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#yq" data-toggle="tab" class="dcq">雨情</a></li>
+                    <li><a href="#suiq" data-toggle="tab" class="dcq">水情</a></li>
+                    <li ><a href="#sq" data-toggle="tab" class="dcq">墒情</a></li>
+                  </ul>
+                </h3>
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="yq">
+                    <div class="fbt">今日降雨分布图</div>
+                    <img src="images/yqyx.png"> </div>
+                  <div class="tab-pane fade" id="suiq">
+                    <div class="common"> <br>
+                      <div class="sh">2015-12-19 08:00 至 2015-12-20 09:00，有7个站点报数据，全政区范围内有0个站点的最新水位超警戒，最高水位达到276.32m。</div>
+                      <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <td>所属政区</td>
+                            <td>站名</td>
+                            <td>日期</td>
+                            <td>水位(m)</td>
+                            <td>超警戒(m)</td>
+                            <td>警戒水位</td>
+                          </tr>
+                        </thead>
+                        <tr>
+                          <td>长汀镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">长汀子(水文)</a></td>
+                          <td class="data">2015/12/20 9:00</td>
+                          <td class="num">94.8</td>
+                          <td class="num">-1.7</td>
+                          <td class="num">96.5</td>
+                        </tr>
+                        <tr>
+                          <td>柴河镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">柴河镇</a></td>
+                          <td class="data">2015/12/20 8:06</td>
+                          <td class="num">214.66</td>
+                          <td class="num">-7.34</td>
+                          <td class="num">222</td>
+                        </tr>
+                        <tr>
+                          <td>横道镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">横道河子(水文)</a></td>
+                          <td class="data">2015/12/20 10:00</td>
+                          <td class="num">98.05</td>
+                          <td class="num">-0.3</td>
+                          <td class="num">98.35</td>
+                        </tr>
+                        <tr>
+                          <td>柴河镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">柴河镇(水文)</a></td>
+                          <td class="data">2015/12/20 8:00</td>
+                          <td class="num">90.31</td>
+                          <td class="num">-1.69</td>
+                          <td class="num">92</td>
+                        </tr>
+                        <tr>
+
+                          <td>三道镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">荒沟(水文)</a></td>
+                          <td class="data">2015/12/20 10:00</td>
+                          <td class="num">90.56</td>
+                          <td class="num">-1.74</td>
+                          <td class="num">92.3</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <div class="sh">2015-12-19 08:00 至 2015-12-20 09:00，有3个站点报数据，全政区范围内有2个站点的最新水位超汛限，最高水位达到430.29m</div>
+                      <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <td>所属政区</td>
+                            <td>站名</td>
+                            <td>日期</td>
+                            <td>水位(m)</td>
+                            <td>超汛期(m)</td>
+                            <td>警戒水位</td>
+                          </tr>
+                        </thead>
+                        <tr>
+                          <td>长汀镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">双峰水库</a></td>
+                          <td class="data">2015/12/20 6:00</td>
+                          <td class="num">430.29</td>
+                          <td class="num">0.14</td>
+                          <td class="num">430.15</td>
+                        </tr>
+                        <tr>
+                          <td>柴河镇</td>
+                          <td><a data-toggle="modal" data-target="#gcx">长石水库</a></td>
+                          <td class="data">2015/12/20 6:00</td>
+                          <td class="num">263.29</td>
+                          <td class="num">-1.31</td>
+                          <td class="num">264.6</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!--tab-content-->
+                  <div class="tab-pane fade in" id="sq">
+                  <img src="images/sqfbt.png"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="col-sm-12 col-md-12 public">
+              <div class="xq">
+                <h3> <span>公告通知</span> <a href="" class="pull-right">+更多</a> </h3>
+                <ul class="jb">
+                  <li><a href="#" class="recent"><img src="images/5_03.png">近期整体汛情较为平稳</a></li>
+                  <li><a href="#"><img src="images/5_03.png">海林市防汛抗旱指挥部组...</a></li>
+                  <li><a href="#"><img src="images/5_03.png">防汛工作全面展开</a></li>
+                  <li><a href="#"><img src="images/5_03.png">省防汛检查组到海林市检查...</a></li>
+                  <li><a href="#"><img src="images/5_03.png">关于开展全市河道内设障情...</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="public col-sm-12 col-md-12 public2">
+              <div class="xq">
+                <h3><span class="briefing">资料文档</span><a href="" class="pull-right">+更多</a></h3>
+                <ul class="jb">
+                  <li><a href="#" class="opp"><img src="images/2_03.png">加快推进抗旱规划项...</a></li>
+                  <li><a href="#"><img src="images/2_03.png">防台防汛行动快措施实</a></li>
+                  <li><a href="#"><img src="images/2_03.png">各地全力迎战台风“天鹅”</a></li>
+                  <li><a href="#"><img src="images/2_03.png">周密部署防台风工作</a></li>
+                  <li><a href="#"><img src="images/2_03.png">开展防汛联动联防培训演练</a></li>
+                  <li><a href="#"><img src="images/2_03.png">有序防范盘古河洪水</a></li>
+                  <li><a href="#"><img src="images/2_03.png">旱情基本解除</a></li>
+                  <li><a href="#"><img src="images/2_03.png">防汛抗洪应急准备</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li> </li>
+    <li id="prevention_content">
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-12 col-md-3">
+        <div class="xq">
+        <div class="side_menu">
+          <h3><span>水利工程</span></h3>
+      
+         <ul>
+         <li><span>防汛责任人</span></li>
+         <li><span>防汛动态</span></li>
+         <li><span>防汛预案</span></li>
+         <li><span>防汛简报</span></li>
+         <li><span>防汛物资</span></li>
+          <li><span>防汛抢险队</span></li>
+         <li><span>防汛知识</span></li>
+         <li><span>防汛每日摘要</span></li>
+         <li><span>防汛条例</span></li>
+         <li><span>防汛新闻</span></li>
+         </ul>
+           </div>
+          <!--container--> 
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="xq">
+          <h3><span>水利工程</span></h3>
+          <div class="common"> <img src="images/rain_all.png"> <img src="images/04-rain.png" id="rain_4"> <img src="images/05-rain.png" id="rain_5"> <img src="images/06-rain.png" id="rain_5"> <img src="images/07-rain.png" id="rain_7"> </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="toolbar">
+          <h3>工程统计信息</h3>
+          <div class="conent_f">
+            <fieldset>
+              <legend>小流域</legend>
+              <p>小流域总数: <span> 345</span></p>
+              <p>河段总长：123 平方千米</p>
+            </fieldset>
+            <fieldset>
+              <legend>水库</legend>
+              <h6>水库总数 ：<span>3</span></h6>
+              <h6>总库容：0.55 万方</h6>
+              <h6>平原水库总数：2</h6>
+              <h6> 山丘水库总数：1</h6>
+              <p>水面总面积：12 平方千米</p>
+            </fieldset>
+            <fieldset>
+              <legend id="rain_s"><a  href="javascript:void(0);">水闸</a></legend>
+              <p>水闸总数: <span> 3</span></p>
+              <p>橡胶坝总坝长： 122 米</p>
+            </fieldset>
+            <fieldset>
+              <legend>堤防</legend>
+              <h6>堤防总段数：<span>55</span></h6>
+              <h6>堤防段总长： 855 米</h6>
+              <h6>河流左岸：30</h6>
+              <h6>河流右岸: 25</h6>
+              <h6>河（江）堤：23</h6>
+              <h6> 湖堤：32</h6>
+            </fieldset>
+            <fieldset>
+              <legend id="rain_y"><a  href="javascript:void(0);">塘（堰）坝</a></legend>
+              <p>塘（堰）坝总数: <span> 55</span></p>
+              <p>总容积： 1000 方</p>
+            </fieldset>
+            <fieldset>
+              <legend id="rain_l"><a  href="javascript:void(0);">路涵</a></legend>
+              <h6>路涵总数：<span>322 </span></h6>
+              <h6>涵洞总长：1200 米</h6>
+              <h6>圆管涵总数：322</h6>
+              <h6>拱涵总数：1200</h6>
+              <h6>盖板涵总数：0</h6>
+              <h6> 箱涵总数:0</h6>
+            </fieldset>
+            <fieldset>
+              <legend id="rain_q"><a  href="javascript:void(0);">桥梁</a></legend>
+              <h6>桥梁总数：<span>322 </span></h6>
+              <h6>桥梁总长：1200 米</h6>
+              <h6>梁桥总数：322</h6>
+              <h6>浮桥总数：1200</h6>
+              <h6>索桥总数：0</h6>
+              <h6>拱桥总数:0</h6>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li id="drought_content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="xq">
+              <h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#hqtj" data-toggle="tab" class="def">旱情统计</a></li>
+                  <li><a href="#dui" data-toggle="tab" class="def">抗旱服务队</a></li>
+                  <li><a href="#khwz" data-toggle="tab" class="def">抗旱物资</a></li>
+                    <li><a href="#khzl" data-toggle="tab" class="def">抗旱资料</a></li>
+                </ul>
+              </h3>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="hqtj">
+                  <div class="common"><br>
+                    <div class="kh"> 11月19日08时至今，海林县平均降水量为6.7毫米，较历史同期偏少2.0毫米(偏少4%），与近5年同期相比降水量排第四位，少于2011年、2012年和2013年。</div>
+                    <div class="kh">11月19日08时至今，河道来水量较常年平均偏少全县库塘蓄水1.2亿方，比多年同期少蓄0.3亿方。</div>
+                    <div class="sh">11月20日至当前时间连续无雨日统计</div>
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <td>政区(雨量站数)</td>
+                          <td>最大连续无雨日</td>
+                          <td>最近连续无雨日</td>
+                        </tr>
+                      </thead>
+                      <tr>
+                        <td>海林县(67)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>海林镇(14)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>长汀镇(16)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>横道镇(5)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>山市镇(5)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>柴河镇(10)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>新安镇(3)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>二道镇(7)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>三道镇(7)</td>
+                        <td>20</td>
+                        <td>0</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="dui">
+                  <div class="common">
+                    <h6>>>抗旱服务队基本信息</h6>
+                    <p>抗旱服务队名称：海林市抗旱服务队</p>
+                    <p>队员总数：  10 人</p>
+                    <p>仓储面积：  120 平方米 </p>
+                    <h6>>>现有主要抗旱设备</h6>
+                    <p>打井设备：  0 台</p>
+                    <p>移动灌溉设备：  60 台套</p>
+                    <h6>>>抗旱能力</h6>
+                    
+                    <p>浇地能力： 100 亩/天</p>
+                   
+                    <h6>>>近5年来抗旱效益</h6>
+                    <p>打井：  35 眼</p>
+                    <p>建设小型工程： 8 处</p>
+                    <p>清淤渠道： 25 公里</p>
+               
+                  </div>
+                </div>
+                <div class="tab-pane fade in" id="khwz">
+                  <div class="common">
+                    <h6>>>现有抗旱物资</h6>
+                    <p>850立方大功率水泵：10 台(套)</p>
+                    <p>32立方深井潜水泵：45 台</p>
+                    <p>15KW变频控制柜：37 台</p>
+                    <p>3×6 mm²防水橡套电缆（每盘86米长）：36 盘</p>
+                    <p>50立方深井潜水泵：27 台</p>
+                    <p>18.5KW变频控制柜：28 台</p>
+                    <p>200立方柴动直联泵：30 台(套)</p>
+                    <p>400立方柴动直联泵：20 台(套)</p>
+                    <p>钻深100米打井机：10 台</p>
+                    <p>钻深300米打井机：5 台(套)</p>
+                    <p>洗井空压机组：6 台(套)</p>
+                    <p>50KW柴油发电机组：35 台</p>
+                    <p>5KVA汽油发电机：110 台</p>
+               
+                  </div>
+                </div>
+                <div class="tab-pane fade in" id="khzl">
+                   
+                </div>
+              </div>
+              
+              <!--container--> 
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <div class="xq" id="boder-right">
+              <h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#ry" data-toggle="tab" class="def">人饮困难</a></li>
+                  <li><a href="#hlgq" data-toggle="tab" class="def">海林灌区</a></li>
+                  <li><a href="#gqgh" data-toggle="tab" class="def">山市灌区规化</a></li>
+                </ul>
+              </h3>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="ry"> <img src="images/han1.png" style="width:73%"> </div>
+                <div class="tab-pane fade in" id="hlgq"> <div class="common"><img src="images/hlgq.png" id="hlgq_img"> </div></div>
+                <div class="tab-pane fade in" id="gqgh"> <div class="common"><img src="images/gqgh.png" id="gqgh_img"></div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--row--> 
+      </div>
+    </li>
+    <li id="weater_content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6"> <img src="images/wt.jpg" width="682">
+            <div class="xq">
+              <h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-toggle="tab" class="dcq">短期预报</a></li>
+                  <li><a href="#ios" data-toggle="tab" class="dcq">长期预报</a></li>
+                </ul>
+              </h3>
+              <div class="tab-content common">
+                <div class="tab-pane fade in active" id="home">
+                  <h5>一、重要天气</h5>
+                  <h6>1. 冷空气影响北方地区气</h6>
+                  <div class="sh">12日至14日，冷空气将自西向东影响新疆东部、西北地区中东部、华北、东北等地，上述地区将有一次大风降温和雨雪天气过程，新疆东部、内蒙古中西部、西北地区中东部、华北西部等地将陆续出现4～6℃的降温，局地降温幅度超过8℃。新疆东部、西北地区东部、内蒙古中西部、华北北部等地将有4～6级风。同时，新疆东部、西北地区大部、内蒙古大部、华北、东北地区等地将有小到中雪，局地大雪。</div>
+                </div>
+                <div class="tab-pane fade in" id="ios">
+                  <div class="sh">11-15日，受东移冷空气影响，中东部地区将出现一次大范围雨雪和大风降温天气过程，新疆北部、西北地区东部、华北北部、东北地区等地有中到大雪，新疆北部局地暴雪或大暴雪；西南地区东部部分地区有雨转雪，部分地区有中到大雪。中东部地区将出现4-6级偏北风，大部地区气温下降4-8℃。</div>
+                  <div class="sh">18-20日，黄淮以南大部地区还将有小到中雨天气过程。</div>
+                  <h6>三、重点关注</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="xq">
+              <h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#wx" data-toggle="tab" class="dcq">卫星云图</a></li>
+                  <li><a href="#ld" data-toggle="tab" class="dcq">雷达回波图</a></li>
+                </ul>
+              </h3>
+              <div class="common">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="wx">
+                    <iframe src="Temp/cloud.html" frameborder="0" scrolling="no"></iframe>
+                  </div>
+                  <div class="tab-pane fade" id="ld">
+                    <iframe src="Temp/rader.html" frameborder="0" scrolling="no"></iframe>
+                  </div>
+                </div>
+                <!--tab-content--> 
+              </div>
+              <!--container--> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li id="duty_content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="aboluo-w-700">
+              <div class="aboluo-leftdiv">
+                <div class="aboluo-tools">
+                  <div class="aboluo-calendar-select-year"></div>
+                  <div class="aboluo-calendar-month"> <a class="aboluo-month-a-perv" href="javascript:;">&lt; </a> <a class="aboluo-month-a-next" href="javascript:;"> &gt;</a> </div>
+                  <input type="button" class="aboluo-toToday" value="返回今天" />
+                </div>
+                <div class="aboluo-rilidiv">
+                  <table class="aboluo-rilitable" cellspacing="0" cellpadding="0" >
+                    <thead class="aboluo-rilithead">
+                      <tr>
+                        <th>一
+                          </td>
+                        <th>二
+                          </td>
+                        <th>三
+                          </td>
+                        <th>四
+                          </td>
+                        <th>五
+                          </td>
+                        <th style="color:red;">六
+                          </td>
+                        <th style="color:red;">日
+                          </td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+              <div class="aboluo-rightdiv">
+                <p class="aboluo-xssj">
+                <p>
+                <p class="aboluo-currday"></p>
+                <p class="aboluo-ssjjr"></p>
+                <p class="aboluo-xsmx"></p>
+              </div>
+            </div>
+            <div class="xq">
+              <div class="dutyday">
+                <div class="duty"><img src="images/44_03.png"></div>
+              </div>
+              <h3><span>值班日志查看</span> <a class="log"><img src="images/8_03.png"></a></h3>
+              <div class="common1">
+                <div class="caption">
+                  <div class="left"><span>2015年12月20日</span></div>
+                </div>
+                <div class="txr">>> 日志填写人：周伟     填写时间： 2015-12-20  08:00</div>
+                <h6>• 雨情</h6>
+                <div class="dl">全市平均降雨量0.0毫米。</div>
+                <h6>• 水情</h6>
+                <div class="dl">全市共3个河道站超警戒，0个水库站超汛限水位。</div>
+                <div class="dl">超警戒河道站：海林(水文) 当前水位250.10米，超警戒1.10米；长汀子(水文) 当前水位96.75米，超警戒水位0.25米；共济村 当前水位279.90米，超警戒水位0.10米。</div>
+              </div>
+            </div>
+             <div class="xq">
+              <h3><span>文件收发统计</span><a class="pull-right log" data-toggle="modal" data-target="#login"><img src="images/8_03.png"></a></h3>
+              <div class="common res">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <td>时间</td>
+                      <td>发送总数</td>
+                      <td>接收总数</td>
+                      <td>接收已处理总数</td>
+                      <td>合计</td>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td class="no-underline">最近3天</td>
+                    <td><a data-toggle="modal" data-target="#file">10</a></td>
+                    <td><a data-toggle="modal" data-target="#file">10</a></td>
+                    <td><a>15</a></td>
+                    <td><a>40</a></td>
+                  </tr>
+                  <tr>
+                    <td class="no-underline">最近7天</td>
+                    <td><a data-toggle="modal" data-target="#file">70</a></td>
+                    <td><a data-toggle="modal" data-target="#file">69</a></td>
+                    <td><a>69</a></td>
+                    <td><a>208</a></td>
+                  </tr>
+                  <tr>
+                    <td class="no-underline">最新1个月</td>
+                    <td><a data-toggle="modal" data-target="#file">210</a></td>
+                    <td><a data-toggle="modal" data-target="#file">215</a></td>
+                    <td><a>215</a></td>
+                    <td><a>640</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="xq">
+              <h3><span class="green">设备运行状态</span></h3>
+              <div class="common">
+                <div class="dl">最新监测结果显示，海林市有7个站点出现异常监测信息，其它站点未报异常信息并且报数据也正常；其中山市镇2个站点，三道镇1个站点，二道镇3个站点，山市镇2个站点。</div>
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <td width="15%">行政区划</td>
+                      <td width="15%">测站编码</td>
+                      <td width="28%">测站名称</td>
+                      <td width="27%">监测时间</td>
+                      <td width="15%">故障描述</td>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="table_content">
+                  <table class="table table-striped table-hover">
+                    <tr>
+                      <td width="15%">柴河镇</td>
+                      <td width="15%">11104530</td>
+                      <td width="28%">柴河镇</td>
+                      <td width="27%"></td>
+                      <td width="15%">漏报</td>
+                    </tr>
+                    <tr>
+                      <td width="15%">新安镇</td>
+                      <td width="15%">11104375</td>
+                      <td width="28%">共济村</td>
+                      <td width="27%"></td>
+                      <td width="15%">漏报</td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11104440</td>
+                      <td width="28%">铁路西大桥</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%">迟报</td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11104475</td>
+                      <td width="28%">新民四队</td>
+                      <td width="27%">2015-12-20 08:55:36</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11104490</td>
+                      <td width="28%">平和村</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11122552</td>
+                      <td width="28%">永丰村</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11136370</td>
+                      <td width="28%">新民二队（六要素）</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11136375</td>
+                      <td width="28%">东德家村（四要素）</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11136380</td>
+                      <td width="28%">二水厂（四要素）</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">海林镇</td>
+                      <td width="15%">11136385</td>
+                      <td width="28%">泡子村</td>
+                      <td width="27%">2015-12-20 08:08:40</td>
+                      <td width="15%"></td>
+                    </tr>
+                   
+                  
+                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="footer">
+  <ol>
+    <li id="home_main" class="current"> <a href="#"> <img src="images/home.png"> </a> </li>
+    <li> <a href="javascript:void(0);"  onClick="show_map()"> <img src="images/flood.png"> </a> </li>
+    <li id="prevention"> <a href="#"> <img src="images/prevention.png"> </a> </li>
+    <li id="drought"> <a href="#"> <img src="images/Drought.png"> </a> </li>
+    <li id="weater"> <a href="#"> <img src="images/weater.png"> </a> </li>
+    <li id="duty"> <a href="#"> <img src="images/duty.png"> </a> </li>
+  </ol>
+</div>
+<!--通讯录-->
+<div class="modal fade" id="txl">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">通讯录</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="control-group">
+              <input type="text" class="form-control" placeholder="所在单位">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="control-group">
+              <input type="text" class="form-control" placeholder="姓名">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <button class="btn check">查询</button>
+          </div>
+        </div>
+        <table class="table table-bordered table-striped table-hover" style="margin-top:10px;">
+          <thead>
+            <tr>
+              <td>序号</td>
+              <td>姓名</td>
+              <td>电话</td>
+              <td>职务</td>
+              <td>单位</td>
+              <td>职责</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td>李吉民</td>
+            <td>13359889777</td>
+            <td>副市长</td>
+            <td>市政府</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>齐景伟</td>
+            <td>13555401777</td>
+            <td>主任</td>
+            <td>市政府办</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>解建学</td>
+            <td>13359698853</td>
+            <td>局长</td>
+            <td>水务局</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>王宗国</td>
+            <td>13304531678</td>
+            <td>副局长</td>
+            <td>水务局</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>李春辉</td>
+            <td>13946376558</td>
+            <td>主任</td>
+            <td>防汛办</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>徐勤刚</td>
+            <td>13664535188</td>
+            <td>镇长</td>
+            <td>海林镇政府</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>周宪军</td>
+            <td>13836388111</td>
+            <td>人大副主席</td>
+            <td>海林镇政府</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>胡振民</td>
+            <td>13514505138</td>
+            <td>村书记</td>
+            <td>斗银村靠山屯</td>
+            <td>预警、撤离</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>秦玉明</td>
+            <td>13766647569</td>
+            <td>会计</td>
+            <td>斗银村靠山屯</td>
+            <td>预警、撤离</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--信息发布-->
+<div class="modal fade" id="xxfb">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">信息发布</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-2">
+            <input type="checkbox">
+            系统首页 </div>
+          <div class="col-md-3">
+            <input type="checkbox">
+            手机移动端 </div>
+          <div class="col-md-2">
+            <input type="checkbox">
+            微信 </div>
+          <div class="col-md-2">
+            <input type="checkbox">
+            微博 </div>
+          <div class="col-md-3">
+            <button class="btn check">发布</button>
+          </div>
+        </div>
+        <textarea name="texta" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--过程线-->
+<div class="modal fade" id="gcx">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">海林县 过程线</h4>
+      </div>
+      <div class="modal-body">
+        <div id="hd" style="height:250px; width:800px;"></div>
+        <!-- /.水库过程性 --> 
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--文件收发详细-->
+<div class="modal fade" id="file">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">文件收发详细</h4>
+      </div>
+      <div class="modal-body">
+      	<table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <td>序号</td>
+              <td>接收/发送日期</td>
+              <td>来源单位</td>
+              <td>文件种类</td>
+              <td>处理情况</td>
+              <td>信息标题</td>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>13.7</td>
+          </tr>
+       </table>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--值班登记-->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">值班登记</h4>
+      </div>
+      <div class="modal-body">
+      	<form action="">
+        	<div class="row pull-right btna">
+                <button class="btn btn-default">登记后发布</button><button class="btn btn-default">登记</button>
+            </div>
+            <div class="row">
+            	<div class="col-xs-3 col-md-3 col-sm-3">
+                  <label class="control-label">用户代码：</label>
+                  <div class="control-group">
+                    <input type="text" class="form-control userCode">
+                  </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </form>
+      	
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<script src="js/respond.src.js"></script> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery-panzoom.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/script.js"></script> 
+<script src="js/common.js"></script> 
+<script src="js/echarts.js"></script> 
+<script src="js/skchart.js"></script> 
+<script src="js/dochart.js"></script> 
+<script src="js/hdchart.js"></script>
+
+ 
+        <script type="text/javascript">
+			$(document).ready(function () {
+        function initPanZoom() {
+          $('#hlgq_img,#gqgh_img').panZoom({
+            'zoomIn'   	: 		$('#zoomin'),
+            'zoomOut' 	: 		$('#zoomout'),
+            'panUp'		  :		$('#panup'),
+            'panDown'		:		$('#pandown'),
+            'panLeft'		:		$('#panleft'),
+            'panRight'	:		$('#panright'),
+            'fit'       :   $('#fit'),
+            'destroy'   :   $('#destroy'),
+            'out_x1'    :   $('#x1'),
+            'out_y1'    :   $('#y1'),
+            'out_x2'    :   $('#x2'),
+            'out_y2'    :   $('#y2'),
+			'mousewheel_delta' : 0.1,
+            'directedit':   true,
+            'debug'     :   false
+          });
+        };
+
+        initPanZoom();
+
+				// init the image switcher
+				$('#images img').bind('click', function () {
+					$('#hlgq img').attr('src', $(this).attr('src'));
+					$('#gqgh img').attr('src', $(this).attr('src'));
+				});
+
+			});
+		</script>
+</body>
+</html>
