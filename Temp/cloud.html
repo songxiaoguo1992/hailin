@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>气象卫星</title>
+ <link type="text/css" href="./cloud_files/product_player.css" rel="stylesheet">
+<link href="./cloud_files/core.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./cloud_files/jquery-1.8.2.js"></script>
+</head>
+
+<body>
+
+
+<div class="container" id="mainContainer">
+
+
+<div class="wrap" id="wrap"><!-- nav_mod -->
+
+<!-- /nav_mod -->
+
+<div class="colspan2 clearfix">
+<div class="fleft">
+<div class="module module-media">
+
+<div id="meta">
+<div class="wxyt">
+<div id="wxyt_loading">
+<div><img src="./cloud_files/loading.jpg"><!-- 正在加载，请耐心等待。。。 --></div>
+</div>
+
+<div class="speed" id="wxyt_speed" style="display: none;">
+
+<input name="100" type="button" value="快速">
+
+<input name="500" type="button" value="中速" class="move" checked="">
+
+<input name="1000" type="button" value="慢速">
+
+</div>
+
+<div class="wxyt_cnt" id="wxytCnt" title="点击看大图" style="height: auto;">
+<div class="tit" id="wxyt_title"></div>
+<a href="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218044500000.jpg" id="wxyt_img_a" target="_blank"><img alt="" id="wxyt_img" src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg" style="height: auto;"></a></div>
+<div class="wxyt_ft">
+
+<div class="op">
+<a class="a_play" href="javascript:void(0);" id="play_btn" title="播放" style="display: none;"></a>
+<a class="a_prev" href="javascript:void(0);" onclick="wxyt.prev();" title="上一帧"><img src="../images/l.png"></a>
+<a class="a_play1" href="javascript:void(0);" id="play_btn1" title="播放"><img src="../images/play1.png"></a><a class="a_next" href="javascript:void(0);" onclick="wxyt.nextFrame();" title="下一帧"><img src="../images/r.png"></a></div>
+
+
+<dl class="clearfix slitu" id="slitu">
+
+<dd class="slide_box">
+<p class="slide" id="sld"><span class="lt"></span><span class="rt"></span></p>
+<p class="slide_cur" id="slide_cur" style="width: 430px;"><span class="lt"></span><span class="rt"></span></p>
+<span class="slide_btn" id="slide_btn" style="left: 430px;"><em id="slb" style="display: block;">12月18日12时45分</em></span></dd>
+
+</dl>
+<div class="set">
+	<a href="javascript:void(0)"><img src="../images/set1.png"></a><a href="javascript:vodi(0)"><img src="../images/fd.png" id="fd"><img src="../images/sx.png" id="sx" style="display:none"></a>
+</div>
+
+
+</div>
+<div class="action clearfix">
+
+
+<div class="view">
+<form name="slideform" id="slideform">
+      			<select id="slide" name="slide" type="hidden" style="display:none;"><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg">2015年12月18日02时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217184500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217184500000.jpg">2015年12月18日02时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217191500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217191500000.jpg">2015年12月18日03时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217194500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217194500000.jpg">2015年12月18日03时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217201500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217201500000.jpg">2015年12月18日04时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217204500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217204500000.jpg">2015年12月18日04时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217211500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217211500000.jpg">2015年12月18日05时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217214500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217214500000.jpg">2015年12月18日05时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217221500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217221500000.jpg">2015年12月18日06时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217224500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217224500000.jpg">2015年12月18日06时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217231500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217231500000.jpg">2015年12月18日07时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217234500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217234500000.jpg">2015年12月18日07时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218001500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218001500000.jpg">2015年12月18日08时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218004500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218004500000.jpg">2015年12月18日08时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218011500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218011500000.jpg">2015年12月18日09时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218014500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218014500000.jpg">2015年12月18日09时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218021500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218021500000.jpg">2015年12月18日10时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218024500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218024500000.jpg">2015年12月18日10时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218031500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218031500000.jpg">2015年12月18日11时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218034500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218034500000.jpg">2015年12月18日11时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218041500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218041500000.jpg">2015年12月18日12时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218044500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218044500000.jpg">2015年12月18日12时45分</option></select>
+
+
+
+
+
+
+
+
+
+<select name="slide1" id="slide1" onchange="changes();"><option value="15年12月18日01时45分">2015年12月18日01时45分</option><option value="15年12月18日02时15分">2015年12月18日02时15分</option><option value="15年12月18日02时45分">2015年12月18日02时45分</option><option value="15年12月18日03时15分">2015年12月18日03时15分</option><option value="15年12月18日03时45分">2015年12月18日03时45分</option><option value="15年12月18日04时15分">2015年12月18日04时15分</option><option value="15年12月18日04时45分">2015年12月18日04时45分</option><option value="15年12月18日05时15分">2015年12月18日05时15分</option><option value="15年12月18日05时45分">2015年12月18日05时45分</option><option value="15年12月18日06时15分">2015年12月18日06时15分</option><option value="15年12月18日06时45分">2015年12月18日06时45分</option><option value="15年12月18日07时15分">2015年12月18日07时15分</option><option value="15年12月18日07时45分">2015年12月18日07时45分</option><option value="15年12月18日08时15分">2015年12月18日08时15分</option><option value="15年12月18日08时45分">2015年12月18日08时45分</option><option value="15年12月18日09时15分">2015年12月18日09时15分</option><option value="15年12月18日09时45分">2015年12月18日09时45分</option><option value="15年12月18日10时15分">2015年12月18日10时15分</option><option value="15年12月18日10时45分">2015年12月18日10时45分</option><option value="15年12月18日11时15分">2015年12月18日11时15分</option><option value="15年12月18日11时45分">2015年12月18日11时45分</option><option value="15年12月18日12时15分">2015年12月18日12时15分</option><option value="15年12月18日12时45分">2015年12月18日12时45分</option></select>
+			至
+			<select name="slide2" id="slide2" onchange="changes();"><option value="15年12月18日12时45分">2015年12月18日12时45分</option><option value="15年12月18日12时15分">2015年12月18日12时15分</option><option value="15年12月18日11时45分">2015年12月18日11时45分</option><option value="15年12月18日11时15分">2015年12月18日11时15分</option><option value="15年12月18日10时45分">2015年12月18日10时45分</option><option value="15年12月18日10时15分">2015年12月18日10时15分</option><option value="15年12月18日09时45分">2015年12月18日09时45分</option><option value="15年12月18日09时15分">2015年12月18日09时15分</option><option value="15年12月18日08时45分">2015年12月18日08时45分</option><option value="15年12月18日08时15分">2015年12月18日08时15分</option><option value="15年12月18日07时45分">2015年12月18日07时45分</option><option value="15年12月18日07时15分">2015年12月18日07时15分</option><option value="15年12月18日06时45分">2015年12月18日06时45分</option><option value="15年12月18日06时15分">2015年12月18日06时15分</option><option value="15年12月18日05时45分">2015年12月18日05时45分</option><option value="15年12月18日05时15分">2015年12月18日05时15分</option><option value="15年12月18日04时45分">2015年12月18日04时45分</option><option value="15年12月18日04时15分">2015年12月18日04时15分</option><option value="15年12月18日03时45分">2015年12月18日03时45分</option><option value="15年12月18日03时15分">2015年12月18日03时15分</option><option value="15年12月18日02时45分">2015年12月18日02时45分</option><option value="15年12月18日02时15分">2015年12月18日02时15分</option><option value="15年12月18日01时45分">2015年12月18日01时45分</option></select>
+
+
+
+			<a style="cursor: pointer;" class="btn_business" name="slidebutton" onclick="ap1(&#39;bbb&#39;);" title="AutoPlay" id="bbb">播放</a>
+
+			<select name="slide3" id="slide3" style="display:none;" type="hidden"><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217174500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217174500000.jpg">2015年12月18日01时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg">2015年12月18日02时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217184500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217184500000.jpg">2015年12月18日02时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217191500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217191500000.jpg">2015年12月18日03时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217194500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217194500000.jpg">2015年12月18日03时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217201500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217201500000.jpg">2015年12月18日04时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217204500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217204500000.jpg">2015年12月18日04时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217211500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217211500000.jpg">2015年12月18日05时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217214500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217214500000.jpg">2015年12月18日05时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217221500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217221500000.jpg">2015年12月18日06时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217224500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217224500000.jpg">2015年12月18日06时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217231500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217231500000.jpg">2015年12月18日07时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217234500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217234500000.jpg">2015年12月18日07时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218001500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218001500000.jpg">2015年12月18日08时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218004500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218004500000.jpg">2015年12月18日08时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218011500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218011500000.jpg">2015年12月18日09时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218014500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218014500000.jpg">2015年12月18日09时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218021500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218021500000.jpg">2015年12月18日10时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218024500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218024500000.jpg">2015年12月18日10时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218031500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218031500000.jpg">2015年12月18日11时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218034500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218034500000.jpg">2015年12月18日11时45分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218041500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218041500000.jpg">2015年12月18日12时15分</option><option value="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218044500000.jpg" bigpic="cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218044500000.jpg">2015年12月18日12时45分</option></select>
+
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="angle angle-lt"></div>
+<div class="angle angle-rt"></div>
+<div class="angle angle-lb"></div>
+<div class="angle angle-rb"></div>
+</div>
+
+</div>
+
+</div>
+<div id="temp_div" style="display:none">
+
+<img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20150710021500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217181500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217184500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217191500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217194500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217201500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217204500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217211500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217214500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217221500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217224500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217231500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151217234500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218001500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218004500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218011500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218014500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218021500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218024500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218031500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218034500000.jpg"><img src="./cloud_files/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20151218041500000.jpg"></div>
+<script src="./cloud_files/product_player.js" type="text/javascript"></script>
+
+<script>
+	$(function($){
+
+$(".form1 i").hover(function(){
+$(".form1 .notice #nc").css({"display":"block"});
+},function(){
+$(".form1 .notice #nc").css({"display":"none"});
+
+})
+var url = window.location.href;
+var url = url.split("?");
+if(url[1] == "JC_YT_DL_WXZXCSYT"){
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_DL_WXZXCSYT.html");
+$(".form1 .txt").text("大陆区域彩色");
+$(".form3 .txt").text("区域加密云图");
+}
+else if(url[1] == "JC_YT_DL_HW")
+{
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_DL_HW.html");
+$(".jjl").css({"height":"541px"});
+$(".form1 .txt").text("大陆区域红外");
+$(".form3 .txt").text("区域加密云图");
+}
+else if(url[1] == "JC_YT_DL_SQ")
+{
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_DL_SQ.html");
+$(".jjl").css({"height":"710px"});
+$(".form1 .txt").text("大陆区域水汽");
+$(".form3 .txt").text("区域加密云图");
+}
+
+else if(url[1] == "JC_YT_YPT_ZHW")
+{
+$(".jjl").css({"height":"710px"});
+$(".form1 .txt").text("中红外圆盘图");
+$(".form3 .txt").text("区域加密云图");
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_YPT_ZHW.html");
+
+}
+else if(url[1] == "JC_YT_YPT_CSYT")
+{
+$(".jjl").css({"height":"710px"});
+$(".form1 .txt").text("彩色圆盘图");
+$(".form3 .txt").text("区域加密云图");
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_YPT_CSYT.html");
+
+}
+else if(url[1] == "JC_YT_YPT_SQ")
+{
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_YPT_SQ.html");
+$(".jjl").css({"height":"710px"});
+$(".form1 .txt").text("水汽圆盘图");
+$(".form3 .txt").text("区域加密云图");
+
+}
+else if(url[1] == "JC_YT_YPT_KJG")
+{
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_YPT_KJG.html");
+$(".jjl").css({"height":"710px"});
+
+$(".form1 .txt").text("可见光圆盘图");
+$(".form3 .txt").text("区域加密云图");
+}
+else if(url[1] == "JC_YT_HQ_HW")
+{
+
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_HQ_HW.html");
+$(".jjl").css({"height":"710px"});
+
+$(".form1 .txt").text("海区红外");
+$(".form3 .txt").text("区域加密云图");
+}
+else if (url[1] == "JC_QYYT_JM_KJG")
+{
+	$(".form1 .txt").text("大陆区域彩色");
+	$(".form3 .txt").text("可见光1KM分辨率");
+	readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_QYYT_JM_KJG.html");
+	$(".jjl").css({"height":"710px"});
+}
+else if (url[1] == "JC_QYYT_JM_HW1")
+{
+	$(".form1 .txt").text("大陆区域彩色");
+	$(".form3 .txt").text("红外一");
+	readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_QYYT_JM_HW1.html");
+	$(".jjl").css({"height":"710px"});
+}
+else if (url[1] == "JC_QYYT_JM_HW2")
+{
+	$(".form1 .txt").text("大陆区域彩色");
+	$(".form3 .txt").text("红外二");
+	readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_QYYT_JM_HW2.html");
+	$(".jjl").css({"height":"710px"});
+}
+else if (url[1] == "JC_QYYT_JM_SQ")
+{
+	$(".form1 .txt").text("大陆区域彩色");
+	$(".form3 .txt").text("水汽");
+	readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_QYYT_JM_SQ.html");
+	$(".jjl").css({"height":"710px"});
+}
+else if (url[1] == "JC_QYYT_JM_ZHW")
+{
+	$(".form1 .txt").text("大陆区域彩色");
+	$(".form3 .txt").text("中红外");
+	readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_QYYT_JM_ZHW.html");
+	$(".jjl").css({"height":"710px"});
+}
+else{
+readSatelliteData("http://d1.weather.com.cn/satellite2015/JC_YT_DL_WXZXCSYT.html");
+
+}
+
+
+
+		$("#provice").click(function() {
+		    $(".provinceLinks").animate({
+		      height: 'toggle'
+		    }, "normal");
+		  })
+		  $('#tab3>a').hover(function  ()
+		  {
+		     var $that = $(this);
+		     $that.addClass('on').siblings().removeClass('on');
+		     var tindex = $that.index();
+		     $('#tab_con3 a:eq('+tindex+')').css('display','block').siblings().css('display','none');
+
+		  })
+		  $('#CHNrank h3 span>a').hover(function  ()
+		  {
+			$(this).addClass('on').siblings().removeClass('on');
+		     var tindex = $(this).index();
+		     $('#CHNrank .rank_con ul:eq('+tindex+')').css('display','block').siblings().css('display','none');
+			$('#rank2014 .rank_con p:eq('+tindex+')').css('display','block');
+		  });
+		$('#CHNrank .rank_con ul li').hover(
+			function  ()
+			{
+			$(this).addClass('on').siblings().removeClass('on');
+			}
+
+		);
+//		$('#List11').hover(function(){
+//		$(this).show();
+//	},function(){
+//		$(this).hide();
+//	});
+
+	});
+</script>
+</div>
+<!-- end of div.wrap-->
+
+</div>
+
+
+</body></html>
